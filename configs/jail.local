@@ -1,0 +1,12 @@
+[DEFAULT]
+# Используем iptables для блокировки (по умолчанию он и так iptables, но лучше указать явно)
+banaction = iptables-multiport
+bantime = 10m
+findtime = 10m
+maxretry = 5
+
+[sshd]
+enabled = true
+port = 22022
+backend = auto
+
